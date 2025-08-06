@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="images/x-icon" type="image/x-icon">
+  <title>Vanshika | UI/UX Designer & Front-End Developer</title>
+
+  <!-- ✅ Font optimization -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800&display=swap" rel="stylesheet"></noscript>
+  
+
+  <!-- ✅ Defer all non-critical CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" media="print" onload="this.media='all'" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" media="print" onload="this.media='all'" />
+  <link rel="stylesheet" href="css/banner.css" media="print" onload="this.media='all'" />
+  <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'" />
+  
+  <noscript>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="css/banner.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </noscript>
+
+
+<style>
+	html, body {
+  overflow-x: hidden;
+}
+</style>
+
+</head>
+<body>
+<section class="container-fluid main p-0">
+
+	    <nav class="navbar navbar-expand-md fixed-top " id="navbar">
+		<div class="container p-0">
+
+			<div class="col-lg-6 col-4 col-md-4 logo-box">
+				<div class="container d-flex ">
+					<a href="index.html">
+						    <div class="logo"></div>
+								<div class="navbar-brand custom-brand animated-brand">
+									    <span class="brand-name">Vanshika</span>
+								</div>		
+					    </a>
+				    </div>	
+			</div>
+
+
+		  <!-- Left: Burger & Desktop Nav -->
+		  <div class="col-lg-6 col-1">
+		    <!-- Burger Icon (visible only on small devices) -->
+		    <button class="burger-icon d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+			 <span></span>
+			 <span></span>
+			 <span></span>
+		    </button>
+	   
+		    <!-- Offcanvas Menu (mobile only) -->
+		    <div class="offcanvas offcanvas-end d-md-none" id="offcanvasNavbar">
+			 <div class="offcanvas-header">
+			   <h6 class="heading">What's Up?</h6>
+			 </div>
+			 <div class="offcanvas-body">
+				<ul class="navbar-nav justify-content-end flex-grow-1">
+				  <li class="nav-item"><a class="nav-link  active" href="index.html">Home</a></li>			   
+				  <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>			   
+				  <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+				</ul>
+			   </div>
+		    </div>
+	   
+		    <!-- Desktop Nav (visible from md and up) -->
+		    <div class="collapse navbar-collapse d-none d-md-block">
+			<div class="container">
+			  <ul class="navbar-nav d-flex justify-content-end w-100 text-end gap-4">
+			       <li class="nav-item"><a class="nav-link  active" href="index.html"> <i class="bi bi-house-door me-1" aria-hidden="true"></i>Home</a></li>			   
+				  <li class="nav-item"><a class="nav-link" href="projects.html">  <i class="bi bi-clipboard-check me-1"></i>Projects</a></li>			   
+				  <li class="nav-item"><a class="nav-link" href="resume.html"> <i class="bi bi-file-earmark-text me-1" aria-hidden="true"></i>Resume</a></li>
+			  </ul>
+			</div>
+		   </div>
+			 
+		   
+		  </div>
+
+		</div>
+	   </nav>
+
+	   
+       <!-- banner -->
+		   <section class="banner">		
+				<div class="container ">
+					<div class="row">
+						<div class="col col-lg-5 ">
+							<img id="avatar" src="images/1.webp" class="avatar" alt="avatar" loading="lazy" >
+						</div>
+						
+						<div class="col col-lg-7 col-12 banner-inner">
+							<h1>Hi, I’m Vanshika</h1>
+							<h5 class="text-start">UI Designer & Front-End Developer</h5>
+							
+							 <div class="typewriter-wrapper" aria-label="Typewriter effect">
+								<p class="typewriter-text"><span id="typewriter">|</span></p>
+							 </div>
+							
+							<button id="openModalBtn" class="btn" >Scan to Connect</button>
+						</div>
+					</div>	    
+				</div>					               		
+		   </section>
+
+
+		   <!-- modals -->
+		 <div id="greetingModal" class="modal">
+			<div class="modal-content">
+				<div class="modal-header p-0 ms-0 pb-3 border-1 border-bottom border-white">
+					<h5 class="ms-3 fs-5 py-0 text-start">Let's Connect</h5>
+					<span id="closeModalBtn" class="close">&times;</span>
+				 </div>
+				 <div class="modal-body">
+					<img src="images/qr.webp" class="qr" alt="qr" loading="lazy">
+				   </div>			
+			</div>
+		   </div>
+		   
+
+
+		 <!-- about me  -->
+		 <section class="mt-5">
+			<div class="container">
+				<div class="row">									
+					<div class="col col-lg-9 col-12">
+						<h4>About Me</h4>
+						<p><strong>Hey, I’m Vanshika</strong> — a front-end developer passionate about building clean, responsive websites using HTML, CSS, Bootstrap, and JavaScript.</p>
+                              <p>I focus on simple, functional design that’s intuitive and visually balanced. Every layout I build is crafted with attention to detail and user experience.</p>
+                              <p>When I’m not coding, I’m experimenting with color palettes, exploring new font pairings, or just enjoying the creative process.</p>
+                              <p><strong>Let’s collaborate to bring your ideas to life in a way that truly stands out.</strong></p>
+					</div>
+					<div class="col col-lg-3 col-12 image-swap ">
+						<img src="images/about.webp" class="floating-img d-none d-lg-block" alt="float" rel="preload"/>
+					</div>
+				</div>   
+			</div>
+		</section>
+
+
+
+       <!-- Services -->
+		<section class="services-section mt-5 ">
+			<div class="container">
+				<h4 class="text-center"> Services</h4>
+				<p class="fw-bold text-center">Creating responsive websites, clean code, and seamless user experiences.</p>
+				<div class="row g-5">
+					<div class="col col-lg-3 col-12 col-md-6">
+					  <div class="service-card">
+					    <img src="images/services1.webp" class="services" loading="lazy" alt="services1">
+					    <h5 class="p-2">Web Design</h5>
+					    <p class="text-center p-3 py-0">Modern, responsive website designs using Figma or Adobe XD, tailored to your brand identity and user experience.</p>
+					  </div>
+					</div>
+					<div class="col col-lg-3 col-12 col-md-6">
+					  <div class="service-card">
+					    <img src="images/services2.webp" class="services" loading="lazy"  alt="services2">
+					    <h5 class="p-2">Figma to Code</h5>
+					    <p class="text-center p-3 py-0">Pixel-perfect front-end development from your Figma or XD designs, using HTML, CSS, JS, and Bootstrap.</p>
+					  </div>
+					</div>
+					<div class="col col-lg-3 col-12 col-md-6">
+					  <div class="service-card">
+					    <img src="images/services4.webp" class="services" loading="lazy"  alt="services3">
+					    <h5 class="p-2">Responsive Sites</h5>
+					    <p class="text-center p-3 py-0">Responsive, mobile-first websites built with Bootstrap, optimized for speed, SEO, and performance.</p>
+					  </div>
+					</div>
+					<div class="col col-lg-3 col-12 col-md-6">
+					  <div class="service-card">
+					    <img src="images/services3.webp" class="services" loading="lazy"  alt="services4">
+					    <h5 class="p-2">Portfolio Sites</h5>
+					    <p class="text-center p-3 py-0">One-page portfolio websites or scrollable personal brand sites, designed to highlight your skills or projects.</p>
+					  </div>
+					</div>
+				   </div>	
+			</div>				 
+		</section>
+
+
+		
+
+            <!-- projects -->
+	 <section class="project-section mt-5">
+			<div class="container">
+						<h4 class="text-center">Projects</h4>
+						<p class="fw-bold text-center">Showcasing responsive websites built with HTML, CSS, Bootstrap, JavaScript & GSAP animations.</p>
+						<div class="row g-5">
+							<div class="col col-lg-4 col-12">
+								<div class="portfolio-card">
+								  <img src="images/fervour-bg.webp" class="portfolio" loading="lazy"  alt="fervour-img">
+								 <div class="card-body">
+								    <h5 class="text-start">Fervour – Petals of Passion</h5>
+								     <ul class="custom-bullets card-text ps-0 ms-0">
+									     <li class="card-text">Elegant flower shop UI with soft color palette and mobile-first design.</li>
+								          <li class="card-text">UI Design & Build</li>
+										<li class="card-text">HTML | CSS | JS | GSAP | Bootstrap</li>
+								    </ul>                                  
+                                            <a href="https://fervour.netlify.app/" class="btn">Live Website</a>
+								  </div>
+								</div>
+							</div>
+							<div class="col col-lg-4 col-12">
+								<div class="portfolio-card">
+								  <img src="images/hubble-bg.webp" class="portfolio" loading="lazy"  alt="hubble-img">
+								  <div class="card-body">
+								    <h5 class="text-start">Hubble - Starry Insights </h5>
+								      <ul class="custom-bullets card-text ps-0 ms-0">
+										<li class="card-text">Responsive Astronomy Portfolio Website Template.</li>
+								          <li class="card-text">UI Design & Build</li>
+										<li class="card-text">HTML | CSS | JS | GSAP | Bootstrap</li>
+									</ul>                                         
+                                            <a href="https://fervour.netlify.app/" class="btn">Live Website</a>
+								  </div>
+								</div>
+							</div>
+							<div class="col col-lg-4 col-12">
+								<div class="portfolio-card">
+								  <img src="images/dart-bg.webp" class="portfolio" loading="lazy"  alt="dart-img">
+								  <div class="card-body">
+								    <h5 class="text-start">Dart Creatives</h5>
+								      <ul class="custom-bullets card-text ps-0 ms-0">
+										<li class="card-text">Creative agency site with bold visuals and service highlights.</li>
+								          <li class="card-text">UI Revamp & Styling</li>
+										<li class="card-text">WordPress | CSS | KG</li>
+									</ul>                                        
+                                            <a href="https://fervour.netlify.app/" class="btn">Live Website</a>
+								  </div>
+								</div>
+							</div>
+						</div>
+						 <div class="container text-center mt-4">
+							<a href="projects.html" class="btn">Explore more</a>
+						 </div>
+			</div>		 
+	</section>
+
+
+
+
+	<!-- skills -->
+		<section class="skills-section mt-5">
+			<div class="container">
+				<h4 class="text-center"> Skills</h4>
+				<p class="fw-bold text-center">  Responsive Web Design | UI/UX Design | HTML5 | CSS3 | Bootstrap 5 | JavaScript | GSAP Animation</p>
+				<div class="row g-5">
+					<div class="col col-lg-3 col-12 col-md-6">
+						<div class="category">
+							<h5 class="text-start">💻 Core Skills</h5>
+							<div class="skill">
+							  <div class="skill-name">UI Design</div>
+							  <div class="progress-bar"><div class="progress" style="width: 85%;">85%</div></div>
+							</div>
+							<div class="skill">
+							  <div class="skill-name">Responsive Web Design</div>
+							  <div class="progress-bar"><div class="progress" style="width: 96%;"></div></div>
+							</div>
+							<div class="skill">
+							  <div class="skill-name">HTML5 / CSS</div>
+							  <div class="progress-bar"><div class="progress" style="width: 95%;"></div></div>
+							</div>
+							<div class="skill">
+								<div class="skill-name">JavaScript (DOM)</div>
+								<div class="progress-bar"><div class="progress" style="width: 89%;"></div></div>
+							   </div>
+							<div class="skill">
+							  <div class="skill-name">Bootstrap</div>
+							  <div class="progress-bar"><div class="progress" style="width: 97%;"></div></div>
+							</div>
+					     </div>  
+					</div>
+					<div class="col col-lg-3 col-12 col-md-6">
+						<div class="category">
+							<h5 class="text-start">🎨 Visual Tools</h5>
+							<ul class="visual-tools p-0 m-0">
+								<div class="icon-skill">
+							             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg" class="adobe" loading="lazy"  alt="icon-1"/> <li>Adobe Illustrator</li>
+							     </div>
+							     <div class="icon-skill">
+							             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" class="adobe" loading="lazy"  alt="icon-2"/> <li>Adobe Photoshop</li>
+							     </div>
+							     <div class="icon-skill">
+								        <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" class="adobe"  loading="lazy"  alt="icon-3"/> <li>Figma</li>
+							     </div>							   
+							     <div class="icon-skill">
+								        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/adobexd.svg" class="adobe" loading="lazy"  alt="icon-4"/> <li>Adobe XD (Exploring)</li>
+							     </div>
+							</ul>				
+						</div>
+					</div>
+					<div class="col col-lg-3 col-12 col-md-6">
+						<div class="category">
+							<h5 class="text-start">✨ Interactions</h5>
+							<div class="icon-skill">
+								<div class="donut-chart1"></div>
+								JS (DOM)
+							</div>
+							<div class="icon-skill">
+							  <div class="donut-chart"></div>
+							     GSAP (basic)
+							</div>
+							<div class="icon-skill">
+								<div class="donut-chart3"></div>
+								Modal Functionality
+							</div>
+
+					</div>
+					</div><div class="col col-lg-3 col-12 col-md-6">
+						<div class="category">
+							<section class="dev-tools">
+								<h3>🛠 Dev Tools</h3>
+								<ul>
+									<li><i class="bi bi-code-slash"></i> VS Code</li>
+									<li><i class="bi bi-cloud-upload"></i> Netlify</li>
+									<li><i class="bi bi-display"></i> Live Server</li>
+									<li><i class="bi bi-fonts"></i> Google Fonts</li>
+									<li><i class="bi bi-stars"></i> Font Awesome</li>
+									<li><i class="bi bi-lightning-charge"></i> GSAP CDN</li>
+									<li><i class="bi bi-bootstrap"></i> Bootstrap Icons</li>
+								</ul>	
+							</section>							   
+						</div>
+					</div>
+				</div>	
+			</div>				 
+		</section>
+
+
+	  
+
+      <!-- blog & form -->
+		<section class=" mt-5">
+			<div class="container ">
+				<div class="row ">
+					<div class="col col-lg-6 col-12 mt-3">
+							<h4 class="">What's Hot</h4>	
+							<div class="row g-4">
+								<div class="col col-md-6 col-12 col-lg-12">
+									<a href="https://www.uistore.design/" class="text-white">
+									<div class="blog-card">
+										<div class="row">
+											<div class="col col-lg-3 col-12 d-none d-md-block">
+												<img src="https://cdn.uistore.design/assets/images/blog-club-free-ui-kit-for-figma-thumb.webp" alt="Blog Thumbnail1" class="blog" loading="lazy"/>
+											</div>
+											<div class="col col-lg-9 col-12">
+												<h5 class="text-start"> Free Handpicked UI Kits for your real life projects</h5>
+												<p>Carefully curated UI kits to jumpstart to clean, modern, and ready to use in real-world projects.</p>
+											</div>	
+										</div>																		
+									</div>
+								</a>	
+								</div>
+								<div class="col col-md-6 col-12 col-lg-12">									
+								    <a href="https://dribbble.com/tags/ui" class="text-white ">
+									<div class="blog-card">
+										<div class="row">
+											<div class="col  col-lg-3 col-12 d-none d-md-block">
+												<img src="https://cdn2.lapa.ninja/assets/images/card-components-free-ui-kit-for-figma-thumb.webp" alt="Blog Thumbnail2"  class="blog" loading="lazy"/>
+											</div>
+											<div class="col col-lg-9 col-12">
+												<h5 class="text-start">Community of designers sharing their work</h5>
+										          <p>A community of designers sharing their work fuels creativity and growth.</p>
+											</div>	
+										</div>	
+									</div>
+								     </a>	
+								</div>
+							</div>
+																	   
+					</div>					
+					<div class="col col-lg-6 col-12 ms-lg-auto mt-3">	
+						<div class="form-container">
+							<form id="onboardingForm" method="POST">
+                                    <h4>Let's work together</h4>
+
+                                       <div class="form-group">
+                                             <input type="text" name="name" required pattern="^[A-Za-z\s]+$" class="form-input" placeholder=" " oninvalid="this.setCustomValidity('Please enter a valid name')" oninput="this.setCustomValidity('')" >
+                                             <label class="form-label">Name</label>
+                                       </div>
+
+                                       <div class="form-group">
+                                             <input type="email" name="email" required class="form-input" placeholder=" " oninvalid="this.setCustomValidity('Please enter a valid email')" oninput="this.setCustomValidity('')" >
+                                             <label class="form-label">Email</label>
+                                       </div>
+
+                                       <div class="form-group">
+                                             <input type="text" name="niche" required class="form-input" placeholder=" " />
+                                             <label class="form-label">Niche (e.g. Fashion, Coaching, SaaS)</label>
+                                       </div>
+
+                                       <div class="form-group">
+                                             <select name="budget" required class="form-select">
+                                                  <option value="" disabled selected hidden></option>
+                                                  <option value="under-100">Under $100</option>
+                                                  <option value="100-500">$100 - $500</option>
+                                                  <option value="500-1500">$500 – $1,500</option>
+                                                  <option value="1500+">$1,500+</option>
+                                             </select>
+                                             <label class="form-label">Select your budget</label>
+                                       </div>
+							    
+
+                                       <div class="form-group">
+                                             <textarea name="message" rows="4" class="form-textarea" placeholder=" "></textarea>
+                                             <label class="form-label">Tell me more about your project (optional)</label>
+                                       </div>
+
+                                       <div style="text-align: right;">
+                                             <button type="submit" class="btn sparkle-button">Submit</button>
+                                       </div>
+
+                                        <div id="message" style="margin-top: 10px; color: var(--white); font-size: 0.9rem;"></div>
+                                  </form>
+						</div>											
+					</div>
+				</div>	
+			</div>	
+	</section>
+
+		
+	
+		 
+		
+		
+		<!-- footer -->
+		<footer class="footer-section mt-5">	
+			<div class="container">
+			  <div class="row text-center text-lg-start py-4 p-0">
+			    <div class="col-lg-6 col-12 mt-4">
+				 <p>&copy;Copyright 2025 All Rights Reserved</p>
+			    </div>
+			    <div class="col-6 col-lg-6 col-12 text-end p-0 ">
+				<div class="flex-center">
+				  <a href="https://x.com/vanshikaM_007" target="_blank"><i class="bi bi-twitter icon-3d"></i></a>
+				  <a href="https://www.facebook.com/vanshu8277" target="_blank"><i class="bi bi-facebook icon-3d"></i></a>
+				  <a href="https://www.instagram.com/vanshikarajput07/" target="_blank"><i class="bi bi-instagram icon-3d"></i></a>
+				  <a href="https://www.linkedin.com/in/vanshika-manav-140938322/" target="_blank"><i class="bi bi-linkedin icon-3d"></i></a>
+				</div>
+			   </div>	   
+			  </div>
+			</div>	
+		</footer>
+
+		   
+</section>
+	
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<!-- Plugins -->
+
+<!-- gsap -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+
+<script src="js/bootstrap.bundle.min.js" defer></script>
+<script src="js/style.js" defer></script>
+<script src="js/banner.js" defer></script>
+
+</body>
+</html>
